@@ -505,7 +505,7 @@ function renderVerse(idx, animate){
   } else {
     verseText.textContent = verses[idx].text;
     verseRef.textContent  = '— '+verses[idx].ref;
-    verseBadge.textContent= 'verso '+(idx+1)+' de '+verses.length;
+    verseBadge.textContent= 'dedicatoria '+(idx+1)+'  '+verses.length;
   }
 }
 
@@ -537,7 +537,7 @@ window.addEventListener('scroll',()=>{
 // ── HEARTS ──
 function spawnHeart(el){
   const h=document.createElement('div'); h.className='hf';
-  h.textContent=['♡','♥','🌹','✦'][Math.floor(Math.random()*4)];
+  h.textContent=['♡','♥','🌹','🦭'][Math.floor(Math.random()*4)];
   const r=el.getBoundingClientRect();
   h.style.left=(r.left+Math.random()*r.width)+'px';
   h.style.top=(r.top+Math.random()*r.height)+'px';
